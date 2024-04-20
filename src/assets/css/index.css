@@ -1,0 +1,10 @@
+/* 提高优先级 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 1120px;
+}
