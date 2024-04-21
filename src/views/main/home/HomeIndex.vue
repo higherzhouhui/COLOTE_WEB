@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { reactive, ref, onMounted, onUnmounted } from 'vue'
+import DocPng from '/@/assets/image/docs.png'
 
 const currentIndex = ref(0)
 const blockChainIndex = ref(0)
@@ -317,7 +318,7 @@ const frequentlyList = [
 ]
 
 const learnMoreList = [
-  '/src/assets/image/docs.png',
+  DocPng,
   'https://www.matrix.io/wp-content/uploads/2022/12/cmccom.webp',
   'https://www.matrix.io/wp-content/uploads/2022/12/medium-_1_.webp',
 ]
@@ -400,7 +401,7 @@ onUnmounted(() => {
           class="screenVideo"
           poster="https://www.matrix.io/wp-content/uploads/2023/02/photo_2023-02-06_18-42-18-3.webp"
         >
-          <source src="/src/assets/video/manhead.m4v" type="video/mp4" />
+          <source src="/src/assets/video/manhead.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="section-container">
@@ -538,7 +539,7 @@ onUnmounted(() => {
           class="feature-img animation animate__animated"
           :class="animationFlag.c2 ? 'custom_slideInUp' : 'custom_slideInDown'"
         >
-          <img src="/src/assets//image/feature.png" />
+          <img src="/src/assets/image/feature.png" />
         </div>
         <div
           class="text-white text-4xl pt-24 pb-16 textShadow wow slideInLeft w-fit m-auto break-all font-bold"
