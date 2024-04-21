@@ -6,7 +6,12 @@ declare module 'vue' {
   export interface GlobalComponents {
     DDay: typeof import('./../components/three-line-pic/src/DDay.vue')['default']
     DMonth: typeof import('./../components/three-line-pic/src/DMonth.vue')['default']
+    ElCarousel: typeof import('element-plus/es')['ElCarousel']
+    ElCarouselItem: typeof import('element-plus/es')['ElCarouselItem']
+    ElCollapse: typeof import('element-plus/es')['ElCollapse']
+    ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElProgress: typeof import('element-plus/es')['ElProgress']
     JDay: typeof import('./../components/three-line-pic/src/JDay.vue')['default']
     YwzChart: typeof import('./../components/three-line-pic/src/YwzChart.vue')['default']
     YwzForm: typeof import('./../components/ywz-form/src/YwzForm.vue')['default']
