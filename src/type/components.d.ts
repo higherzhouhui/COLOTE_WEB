@@ -6,6 +6,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     DDay: typeof import('./../components/three-line-pic/src/DDay.vue')['default']
     DMonth: typeof import('./../components/three-line-pic/src/DMonth.vue')['default']
+    ElBacktop: typeof import('element-plus/es')['ElBacktop']
     ElCarousel: typeof import('element-plus/es')['ElCarousel']
     ElCarouselItem: typeof import('element-plus/es')['ElCarouselItem']
     ElCollapse: typeof import('element-plus/es')['ElCollapse']

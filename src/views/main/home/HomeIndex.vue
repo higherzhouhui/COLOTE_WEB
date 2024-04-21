@@ -5,7 +5,15 @@ const currentIndex = ref(0)
 const blockChainIndex = ref(0)
 const tabIndex = ref(0)
 const timer = ref()
-
+const debounce = (fn: () => void, delay: number) => {
+  let timer: any = null
+  return function () {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      fn.apply('')
+    }, delay)
+  }
+}
 const sloganList = reactive([
   'Avatar Intelligence',
   'Technology',
@@ -314,6 +322,52 @@ const learnMoreList = [
   'https://www.matrix.io/wp-content/uploads/2022/12/medium-_1_.webp',
 ]
 
+const animationFlag: any = ref({
+  c0: false,
+  c1: false,
+  c2: false,
+  c3: false,
+  c4: false,
+  c5: false,
+  c6: false,
+  c7: false,
+  c8: false,
+  c9: false,
+  c10: false,
+  c11: false,
+  c12: false,
+  c13: false,
+  c14: false,
+  c15: false,
+  c16: false,
+  c17: false,
+  c18: false,
+  c19: false,
+})
+
+const onScroll = () => {
+  const selectContent = document.getElementsByClassName('animation')
+  const avaheight = window.screen.availHeight
+  const scrollY = window.scrollY
+  if (selectContent && selectContent.length) {
+    const length = selectContent.length
+    for (let i = 0; i < length; i++) {
+      const domRect = selectContent[i].getBoundingClientRect()
+      if (domRect.top > 0) {
+        if (domRect.top < 0.7 * avaheight && scrollY > 20) {
+          animationFlag.value[`c${i}`] = true
+        }
+      }
+      if (domRect.bottom < 0) {
+        animationFlag.value[`c${i}`] = false
+      }
+      if (scrollY < 20) {
+        animationFlag.value[`c${i}`] = false
+      }
+    }
+  }
+}
+
 onMounted(() => {
   timer.value = setInterval(() => {
     currentIndex.value = currentIndex.value + 1
@@ -324,11 +378,13 @@ onMounted(() => {
     if (blockChainIndex.value > blockChainList.length - 1) {
       blockChainIndex.value = 0
     }
+    window.addEventListener('scroll', debounce(onScroll, 50))
   }, 1500)
 })
 
 onUnmounted(() => {
   clearInterval(timer.value)
+  window.removeEventListener('scroll', debounce(onScroll, 50))
 })
 </script>
 
@@ -376,9 +432,8 @@ onUnmounted(() => {
     <div class="coming">
       <div class="container text-center">
         <div
-          class="text-white text-4xl pt-24 pb-16 textShadow wow slideInLeft w-fit m-auto break-all font-bold"
-          data-wow-duration="1s"
-          data-wow-delay="1s"
+          class="text-white text-4xl pt-24 pb-16 textShadow animation animate__animated w-fit m-auto break-all font-bold"
+          :class="animationFlag.c0 ? 'animate__fadeIn' : 'animate__fadeOut'"
         >
           COLOTE 3.0 is COMING
         </div>
@@ -453,7 +508,10 @@ onUnmounted(() => {
         </div>
         <div class="text-video">
           <div class="left">
-            <div class="title text-3xl">
+            <div
+              class="title text-3xl animation animate__animated"
+              :class="animationFlag.c1 ? 'animate__fadeIn' : 'animate__fadeOut'"
+            >
               Complete control of<br />
               <span class="text-4xl">Digital</span> Avatar
             </div>
@@ -479,7 +537,10 @@ onUnmounted(() => {
             </div>
           </div>
         </div>
-        <div class="feature-img">
+        <div
+          class="feature-img animation animate__animated"
+          :class="animationFlag.c2 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           <img src="/src/assets//image/feature.png" />
         </div>
         <div
@@ -519,7 +580,10 @@ onUnmounted(() => {
             :show-text="false"
           />
         </div>
-        <div class="feature-img">
+        <div
+          class="feature-img animation animate__animated"
+          :class="animationFlag.c3 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           <img
             src="https://www.matrix.io/wp-content/uploads/2022/12/phase1-2.webp"
           />
@@ -532,13 +596,19 @@ onUnmounted(() => {
           The COLOTE AI Network makes artificial intelligence accessible to
           everything!
         </div>
-        <div class="ai-network-list">
+        <div
+          class="ai-network-list animation animate__animated"
+          :class="animationFlag.c4 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           <div v-for="(item, index) in aiNetWorkList" :key="index">
             <img :src="item.logo" class="ai-network-list-img" />
             <div class="text-3xl text-[#06f] text-center">{{ item.title }}</div>
           </div>
         </div>
-        <div class="block-chain">
+        <div
+          class="block-chain animation animate__animated"
+          :class="animationFlag.c5 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           <div class="block-chain-left">
             <div
               class="text-3xl text-[#ADC0FC] text-center flex justify-center max-w-[100%] break-all"
@@ -568,14 +638,20 @@ onUnmounted(() => {
             <div class="cole">Stake $COLE</div>
           </div>
         </div>
-        <div class="desc2">
+        <div
+          class="desc2 animation animate__animated"
+          :class="animationFlag.c6 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           The COLOTE 2.0 is constructing a blockchain-based AI economy based on
           data, computer power, and AI models. We're building a self-evolving AI
           platform with aggregated processing power, safe data COLEagement,
           transparent data sharing, and access to an ever-growing set of
           on-chain AI data, models, and applications.
         </div>
-        <div class="tab-list">
+        <div
+          class="tab-list animation animate__animated"
+          :class="animationFlag.c7 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           <div
             v-for="(item, index) in COLEasList"
             :key="index"
@@ -586,7 +662,10 @@ onUnmounted(() => {
             {{ item.tab }}
           </div>
         </div>
-        <div class="block-chain">
+        <div
+          class="block-chain animation animate__animated"
+          :class="animationFlag.c8 ? 'custom_slideInUp' : 'custom_slideInDown'"
+        >
           <div class="tab-content-left">
             <img :src="COLEasList[tabIndex].logo" />
           </div>
@@ -768,6 +847,7 @@ onUnmounted(() => {
         </div>
       </div>
     </div>
+    <el-backtop :right="100" :bottom="100" />
   </div>
 </template>
 
@@ -1223,5 +1303,20 @@ onUnmounted(() => {
 }
 .contact-img:hover {
   transform: scale(1.1);
+}
+.animation {
+  transition: all 0.5s;
+}
+.custom_slideInUp {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.custom_slideInDown {
+  transform: translate(0, 50px);
+  opacity: 0;
+}
+::v-deep .el-backtop {
+  background: #06f;
+  color: #fff;
 }
 </style>
