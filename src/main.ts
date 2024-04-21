@@ -10,6 +10,7 @@ import 'animate.css'
 // 单独引入 ElMessage 和 ElMessageBox 的样式
 import 'element-plus/theme-chalk/el-message.css'
 import 'element-plus/theme-chalk/el-message-box.css'
+import 'virtual:svg-icons-register'
 const app = createApp(App).use(store)
 
 // 获取基础数据

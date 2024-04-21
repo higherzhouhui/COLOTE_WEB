@@ -6,6 +6,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { viteMockServe } from 'vite-plugin-mock'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineConfig(({ mode }: ConfigEnv) => {
   const env = loadEnv(mode, process.cwd())
@@ -31,6 +32,12 @@ export default defineConfig(({ mode }: ConfigEnv) => {
       },
     },
     plugins: [
+      createSvgIconsPlugin({
+        // Specify the icon folder to be cached
+        iconDirs: [resolve(process.cwd(), 'src/assets/svg')],
+        // Specify symbolId format
+        symbolId: 'icon-[dir]-[name]',
+      }),
       vue({
         // 默认开启响应性语法糖
         reactivityTransform: true,
