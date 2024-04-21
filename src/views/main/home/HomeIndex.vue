@@ -400,10 +400,7 @@ onUnmounted(() => {
           class="screenVideo"
           poster="https://www.matrix.io/wp-content/uploads/2023/02/photo_2023-02-06_18-42-18-3.webp"
         >
-          <source
-            src="https://www.matrix.io/wp-content/uploads/2022/12/COLEhead.m4v"
-            type="video/mp4"
-          />
+          <source src="/src/assets/video/manhead.m4v" type="video/mp4" />
         </video>
       </div>
       <div class="section-container">
