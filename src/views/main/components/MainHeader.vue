@@ -15,7 +15,7 @@ const routerToHome = () => {
       <div @click="routerToHome">
         <img src="/src/assets/logo.png" class="h-[50px]" />
       </div>
-      <div class="flex flex-1 justify-center menuList">
+      <div class="flex-1 justify-center menuList">
         <div
           v-for="item in menuList"
           :key="item"
@@ -66,6 +66,7 @@ const routerToHome = () => {
   }
 }
 .menuList {
+  display: flex;
   @media screen and (max-width: 900px) {
     display: none;
   }

@@ -6,6 +6,7 @@ const currentIndex = ref(0)
 const blockChainIndex = ref(0)
 const tabIndex = ref(0)
 const timer = ref()
+
 const debounce = (fn: () => void, delay: number) => {
   let timer: any = null
   return function () {
