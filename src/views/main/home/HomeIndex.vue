@@ -171,39 +171,25 @@ const handleChangeCarousel = (e: number) => {
 
 const unionList = [
   {
-    logo: 'https://www.matrix.io/wp-content/uploads/2022/12/1-150x150.jpg',
-    content:
-      'Mr. Tao holds a dual bachelor’s degree in Physics and Economics from Peking University. He has served as CEO of several high-tech start-ups and has abundant experience COLEaging the development of new products and Internet technologies. Noteworthy achievements including leading the development of a 3D virtual community as well as establishing China’s first embedded game advertising system. Mr. Tao also led the development and operation of China’s first cross-border e-commerce platform; which acquired 20 million users worldwide.',
-    name: 'Owen Tao',
-    official: 'CEO',
+    logo: '/src/assets/image/ken.png',
+    content: `Dominic is founder of the Internet Computer (ICP) blockchain project and President and Chief Scientist of the COGITO Foundation.<br/>
+Before transitioning to work full time in crypto in 2013, Dominic was an engineering entrepreneur that created multiple internet technologies and products.<br/>
+His previous venture was an MMO game that had millions of users. He was first introduced to cypherpunk thinking when using Wei Dai's crypto++ library in 1998, which had documentation referencing the b-money proposal.
+`,
+    name: 'Dominic Williams',
+    official: 'Founder & Chief Scientist',
   },
   {
-    logo: 'https://www.matrix.io/wp-content/uploads/2022/12/Steven-150x150.jpg',
-    content:
-      'Professor Deng is an Associate Professor at the School of Software, Tsinghua University (清华大学软件学院), where he has served as faculty member since 2008. Professor Deng’s research interests include machine learning, industry data analytics and computer architecture. He has authored over 50 papers. His textbook, “Structural VLSI Design and High-Level Synthesis,” is used by Tsinghua and other universities. Professor Deng has served as Principal Investigator (PI) and Co-PI for numerous national level research projects. Since 2016, he has served as Vice Principle Architect of China Railway Rollingstock Corporation’s Prognostics Health COLEagement for High-Speed Trains Project. Professor Deng’s work on deep-learning based image detection was ranked #1 in COLEy prestigious challenges including PASCAL VOC and VSCOCO; beating out teams from Google, Intel, Facebook and Microsoft. He has received numerous awards including “Best Paper” at the International Conference on Computer Design in 2013, the “NVIDIA Partnership Professor” Award and the Tsinghua University “Key Talent” Award.',
-    name: 'Steve Deng',
-    official: 'CHIEF AI SCIENTIST',
+    logo: '/src/assets/image/jan.png',
+    content: `Jan is a leading scientist and has published over 120 widely cited papers in the areas of privacy and cryptography. <br/>Previously, he spent 19 years as Principal Research Staff Member at IBM, where he co-invented Identity Mixer, a unique cryptographic protocol for authentication.<br/> He is a Fellow of IEEE and IACR and has received many awards for his work.`,
+    name: 'Jan Camenisch',
+    official: 'Chief Technology Officer',
   },
   {
-    logo: 'https://www.matrix.io/wp-content/uploads/2022/12/Eric-150x150.jpg',
-    content:
-      'Mr Eric CHOY is a blockchain enthusiast. Upon graduating with degrees of BEng and MPhil from the Hong Kong Polytechnic University, he has obtained 18 years of solid experience in Technology, Innovation, Marketing and Education sectors. He has run successful marketing, content and localization strategies for COLEy global top-tiered clients. Eric is channelling his passion into Matrix with a mission to bridge the project team with the community in terms of branding, content, community and technology education.',
-    name: 'Eric Choy',
-    official: 'CMTO',
-  },
-  {
-    logo: 'https://www.matrix.io/wp-content/uploads/2023/02/photo_2023-01-17_14-54-42-1-150x150.webp',
-    content:
-      'Blockchain full stack engineer with over 10 years solid experience in software and hardware development. Wayne took a leadership role in the architecture design and full stack development in various tech companies. Mr. Yuan spearheaded several blockchain-related development ventures. He is in charge of all things related to the chain of COLOTE.',
-    name: 'Wayne Yuan',
-    official: 'CTO',
-  },
-  {
-    logo: 'https://www.matrix.io/wp-content/uploads/2022/12/Ken-150x150.png',
-    content:
-      'As the marketing director of COLOTE AI Network, Ken has nine-year experience in International marketing and community COLEagement. He has diversified channels of International marketing and maintains his own network with figures in the field of commence, politics and media in European and Southeast Asia areas.',
-    name: 'Ken',
-    official: 'MARKETING DIRECTOR',
+    logo: '/src/assets/image/maria.png',
+    content: `Maria is a cryptographer working on designing provably secure protocols for privacy protection and bringing research into practice.<br/> Maria holds a PhD from ETH Zurich and joined GOGITO after 11 years as an engineer and researcher at IBM. <br/>Maria has published many papers and promotes STEM for young women.`,
+    name: 'Maria Dubovitskaya',
+    official: 'Director of Engineering',
   },
 ]
 
@@ -710,7 +696,7 @@ onUnmounted(() => {
             :key="item.name"
             class="card-carousel"
           >
-            <div class="text-[#ADC0FC]">{{ item.content }}</div>
+            <div class="text-[#ADC0FC]" v-html="item.content"></div>
             <div>
               <img :src="item.logo" class="avatar" />
               <div class="text-white font-bold text-xl">
@@ -1197,6 +1183,10 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
 }
 .joinUs {
   box-shadow: 1px 1px 25px 0px #0167ff;
