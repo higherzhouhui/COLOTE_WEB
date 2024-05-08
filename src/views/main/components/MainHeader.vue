@@ -13,7 +13,7 @@ const routerToHome = () => {
       class="container flex items-center h-[100%] cursor-pointer header-content"
     >
       <div @click="routerToHome">
-        <img src="/src/assets/logo.png" class="h-[50px]" />
+        <img src="/src/assets/logo.png" class="h-[30px]" />
       </div>
       <div class="flex-1 justify-center menuList">
         <div

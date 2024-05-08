@@ -415,7 +415,7 @@ onUnmounted(() => {
         </video>
       </div>
       <div class="section-container">
-        <img src="/src/assets/logo.png" class="h-20" />
+        <img src="/src/assets/logo.png" class="h-14" />
         <div class="text-white text-3xl flex">
           <div class="mr-3">This is</div>
           <div :class="solganAnimationList[currentIndex % 2]">
