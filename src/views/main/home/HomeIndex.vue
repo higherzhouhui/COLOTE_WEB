@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { reactive, ref, onMounted, onUnmounted } from 'vue'
 import DocPng from '/@/assets/image/docs.png'
-
+import KenPng from '/@/assets/image/ken.png'
+import JanPng from '/@/assets/image/jan.png'
+import MariaPng from '/@/assets/image/maria.png'
+import DavPng from '/@/assets/image/dav.png'
+import JenPng from '/@/assets/image/jen.png'
+import LaraPng from '/@/assets/image/lara.png'
 const currentIndex = ref(0)
 const blockChainIndex = ref(0)
 const tabIndex = ref(0)
@@ -171,7 +176,7 @@ const handleChangeCarousel = (e: number) => {
 
 const unionList = [
   {
-    logo: '/src/assets/image/ken.png',
+    logo: KenPng,
     content: `Dominic is founder of the Internet Computer (ICP) blockchain project and President and Chief Scientist of the COGITO Foundation.<br/>
 Before transitioning to work full time in crypto in 2013, Dominic was an engineering entrepreneur that created multiple internet technologies and products.<br/>
 His previous venture was an MMO game that had millions of users. He was first introduced to cypherpunk thinking when using Wei Dai's crypto++ library in 1998, which had documentation referencing the b-money proposal.
@@ -180,16 +185,34 @@ His previous venture was an MMO game that had millions of users. He was first in
     official: 'Founder & Chief Scientist',
   },
   {
-    logo: '/src/assets/image/jan.png',
+    logo: JanPng,
     content: `Jan is a leading scientist and has published over 120 widely cited papers in the areas of privacy and cryptography. <br/>Previously, he spent 19 years as Principal Research Staff Member at IBM, where he co-invented Identity Mixer, a unique cryptographic protocol for authentication.<br/> He is a Fellow of IEEE and IACR and has received many awards for his work.`,
     name: 'Jan Camenisch',
     official: 'Chief Technology Officer',
   },
   {
-    logo: '/src/assets/image/maria.png',
+    logo: MariaPng,
     content: `Maria is a cryptographer working on designing provably secure protocols for privacy protection and bringing research into practice.<br/> Maria holds a PhD from ETH Zurich and joined GOGITO after 11 years as an engineer and researcher at IBM. <br/>Maria has published many papers and promotes STEM for young women.`,
     name: 'Maria Dubovitskaya',
     official: 'Director of Engineering',
+  },
+  {
+    logo: DavPng,
+    content: `Before joining DFINITY, David held a postdoc position at Graz University of Technology.<br/> He focuses on provably secure public key cryptography, and, in particular, on cryptographically addressing security and privacy issues in modern computing scenarios (e.g., cloud computing, Blockchains). <br/>This also includes work on primitives for the post-quantum era.`,
+    name: 'David Derler',
+    official: 'Technical Staff',
+  },
+  {
+    logo: JenPng,
+    content: `Jens is a leading cryptographer who has invented pairing-based NIZK proofs, pairing-based SNARKs, and logarithmic size proof systems underpinning Bulletproofs.<br/> He got a PhD from Aarhus University, the Chancellor's Award for Postdoctoral Research at UCLA, became Professor of Cryptology at UCL, and has published more than 50 scientific articles.`,
+    name: 'Jens Groth',
+    official: 'Technical Staff',
+  },
+  {
+    logo: LaraPng,
+    content: `Lara studied Computer Science at ETH Zurich, where she also received a PhD in the Information Security Group. <br/>In her research, she has used formal methods to reason about the security of systems and protocols.<br/> In particular, her focus was on designing and formally verifying security protocols, taking into consideration new properties and new security relevant aspects, such as human errors and usability aspects.`,
+    name: 'Lara Schmid',
+    official: 'Technical Staff',
   },
 ]
 
@@ -820,10 +843,10 @@ onUnmounted(() => {
           />
         </div>
         <div class="logo-list mt-20">
-          <a href="www.baidu.com" target="_blank"
+          <a href="https://twitter.com/evelyn_trinker" target="_blank"
             ><img src="/src/assets/image/twitter.png" class="contact-img"
           /></a>
-          <a href="www.baidu.com" target="_blank"
+          <a href="https://t.me/CogitoAINetwork" target="_blank"
             ><img src="/src/assets/image/telegram.png" class="contact-img"
           /></a>
         </div>
