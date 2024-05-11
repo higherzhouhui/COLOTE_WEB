@@ -165,9 +165,21 @@ const itemList = [
   { logo: 'l4', label: 'Transfer：', value: '30M+' },
 ]
 const versionList = [
-  { logo: 'c1', label: '1.0 WhitePaper' },
-  { logo: 'c2', label: '2.0 GreenPaper' },
-  { logo: 'c3', label: '3.0 Blueprint' },
+  {
+    logo: 'c1',
+    label: '1.0 WhitePaper',
+    href: 'https://pdfviewer-delta.vercel.app?pdfUrl=COGITO_1.0_WHITE_PAPER.pdf',
+  },
+  {
+    logo: 'c2',
+    label: '2.0 GreenPaper',
+    href: 'https://pdfviewer-delta.vercel.app?pdfUrl=Cogito_1.0_Green_Paper(English).pdf',
+  },
+  {
+    logo: 'c3',
+    label: '3.0 Blueprint',
+    href: 'https://pdfviewer-delta.vercel.app?pdfUrl=Cogito_1.0_Roadmap_Full_EN.pdf',
+  },
 ]
 const currentCarouselIndex = ref(0)
 const handleChangeCarousel = (e: number) => {
@@ -355,7 +367,9 @@ const animationFlag: any = ref({
   c18: false,
   c19: false,
 })
-
+const handleViewPdf = (href: string) => {
+  window.open(href)
+}
 const onScroll = () => {
   const selectContent = document.getElementsByClassName('animation')
   const avaheight = window.screen.availHeight
@@ -446,7 +460,12 @@ onUnmounted(() => {
           COLOTE 3.0 is COMING
         </div>
         <div class="comingList pb-24">
-          <div v-for="(item, index) in versionList" :key="index" class="item">
+          <div
+            v-for="(item, index) in versionList"
+            :key="index"
+            class="item"
+            @click="handleViewPdf(item.href)"
+          >
             <div>{{ item.label }}</div>
             <div>
               <svg>
