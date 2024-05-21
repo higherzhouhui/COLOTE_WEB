@@ -25,11 +25,11 @@ const routerToHome = () => {
           <div class="underItem" />
         </div>
       </div>
-      <div
+      <!-- <div
         class="download text-white bg-[#0052FF] rounded-full px-3 py-2 cursor-pointer"
       >
         DownLoad
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

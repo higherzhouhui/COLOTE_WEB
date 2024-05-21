@@ -7,6 +7,7 @@ import MariaPng from '/@/assets/image/maria.png'
 import DavPng from '/@/assets/image/dav.png'
 import JenPng from '/@/assets/image/jen.png'
 import LaraPng from '/@/assets/image/lara.png'
+import Brain from '/@/assets/image/brain.png'
 const currentIndex = ref(0)
 const blockChainIndex = ref(0)
 const tabIndex = ref(0)
@@ -52,7 +53,7 @@ Better algorithms will allow users to create perfect AvI to create value in the 
     logo: 'https://www.matrix.io/wp-content/uploads/2022/12/genesis-1.webp',
     title: 'Genesis',
     content: `
-Core functions of COLOTE 2.0 will be perfected so that the hardware requirement of AvI can be met. At the same time, basic brain electric signals will be stored to set up preliminary avatars.`,
+Core functions of Cogito 2.0 will be perfected so that the hardware requirement of AvI can be met. At the same time, basic brain electric signals will be stored to set up preliminary avatars.`,
   },
   {
     logo: 'https://www.matrix.io/wp-content/uploads/2022/12/reloaded-1.webp',
@@ -104,7 +105,7 @@ const COLEasList = [
     logo: 'https://www.matrix.io/wp-content/uploads/2023/02/19-scaled-2.webp',
     tab: 'COLETA',
     title:
-      'Auto-ML Platform: It enables people with no background in AI to perform ML on a COLOTE node to get the AI models they need.',
+      'Auto-ML Platform: It enables people with no background in AI to perform ML on a COGITO node to get the AI models they need.',
     list: [
       'Decentralized computing power more cost-effective.',
       'Time-insensitive tasks that require a high level of privacy.',
@@ -154,16 +155,16 @@ const solganAnimationList = reactive([
   'animate__animated animate__flipOutX',
 ])
 
-const itemList = [
-  {
-    logo: 'l1',
-    label: 'Validator',
-    value: 'Node：103',
-  },
-  { logo: 'l2', label: 'Mining', value: 'Node：1222' },
-  { logo: 'l3', label: 'COLE Staked：', value: '229M+' },
-  { logo: 'l4', label: 'Transfer：', value: '30M+' },
-]
+// const itemList = [
+//   {
+//     logo: 'l1',
+//     label: 'Validator',
+//     value: 'Node：103',
+//   },
+//   { logo: 'l2', label: 'Mining', value: 'Node：1222' },
+//   { logo: 'l3', label: 'COLE Staked：', value: '229M+' },
+//   { logo: 'l4', label: 'Transfer：', value: '30M+' },
+// ]
 const versionList = [
   {
     logo: 'c1',
@@ -230,28 +231,28 @@ His previous venture was an MMO game that had millions of users. He was first in
 
 const frequentlyList = [
   {
-    title: 'Why does COLOTE exist?',
+    title: 'Why does COGITO exist?',
     desc: 'The development of blockchain is held back by three obstacles',
     list: [
       {
         title: 'Slowness',
         content:
-          'COLOTE AI aims to address the issue of slowness in traditional blockchain platforms by using a unique hybrid consensus mechanism that combines elements of both Proof of Work (PoW) and Proof of Stake (PoS) algorithms. This allows for faster transaction speeds and increased scalability.',
+          'COGITO AI aims to address the issue of slowness in traditional blockchain platforms by using a unique hybrid consensus mechanism that combines elements of both Proof of Work (PoW) and Proof of Stake (PoS) algorithms. This allows for faster transaction speeds and increased scalability.',
       },
       {
         title: 'Security Issues',
         content:
-          'COLOTE AI also aims to address security issues by using advanced AI technologies to detect and prevent malicious attacks on the network, such as identifying and blocking suspicious transactions. Additionally, the platform uses advanced encryption and secure communication protocols to protect user data and transactions.',
+          'COGITO AI also aims to address security issues by using advanced AI technologies to detect and prevent malicious attacks on the network, such as identifying and blocking suspicious transactions. Additionally, the platform uses advanced encryption and secure communication protocols to protect user data and transactions.',
       },
       {
         title: 'Impact on environment',
         content:
-          'COLOTE AI also addresses the environmental impact by using a consensus algorithm that is energy-efficient. This is achieved by using a hybrid consensus mechanism combining PoW and PoS which is a more energy-efficient compared to traditional PoW-based blockchains, which require significant amounts of energy to maintain and secure the network.',
+          'COGITO AI also addresses the environmental impact by using a consensus algorithm that is energy-efficient. This is achieved by using a hybrid consensus mechanism combining PoW and PoS which is a more energy-efficient compared to traditional PoW-based blockchains, which require significant amounts of energy to maintain and secure the network.',
       },
     ],
   },
   {
-    title: 'What is the vision and mission of COLOTE?',
+    title: 'What is the vision and mission of COGITO?',
     desc: 'Vision: To build a decentralized auto-functioning AI economy Mission',
     list: [
       {
@@ -270,8 +271,8 @@ const frequentlyList = [
     ],
   },
   {
-    title: 'What are main features of COLOTE?',
-    desc: 'Thanks to fast-growing AI technologies, COLOTE offers unique features as follows.',
+    title: 'What are main features of COGITO?',
+    desc: 'Thanks to fast-growing AI technologies, COGITO offers unique features as follows.',
     list: [
       {
         title: 'SAFER',
@@ -295,12 +296,12 @@ const frequentlyList = [
     list: [
       {
         title: 'Utilization',
-        content: `COLE coins can be used to participate in the network's consensus process, pay for transaction fees, and access advanced AI services on the MATRIX AI Network.`,
+        content: `COLE coins can be used to participate in the network's consensus process, pay for transaction fees, and access advanced AI services on the Cogito Ai Network.`,
       },
       {
         title: 'Governance',
         content:
-          'COLE coin holders have the right to participate in the governance of the COLOTE AI Network, including voting on protocol updates and other important decisions.',
+          'COLE coin holders have the right to participate in the governance of the COGITO Ai Network, including voting on protocol updates and other important decisions.',
       },
       {
         title: 'Staking',
@@ -313,28 +314,28 @@ const frequentlyList = [
       },
       {
         title: 'Security',
-        content: `The MATRIX AI Network uses advanced security measures to protect the network and user's assets.`,
+        content: `The COGITO AI Network uses advanced security measures to protect the network and user's assets.`,
       },
       {
         title: 'Scalability',
         content:
-          'The MATRIX AI Network aims to provide high scalability, allowing for faster and more efficient transactions.',
+          'The COGITO AI Network aims to provide high scalability, allowing for faster and more efficient transactions.',
       },
       {
         title: 'Decentralization',
         content:
-          'The MATRIX AI Network is decentralized, allowing for a more secure and transparent way to conduct transactions and access AI services.',
+          'The COGITO AI Network is decentralized, allowing for a more secure and transparent way to conduct transactions and access AI services.',
       },
       {
         title: 'AI integration',
         content:
-          'The MATRIX AI Network uses advanced AI technologies to improve network perforCOLEce and security, as well as to provide access to AI services.',
+          'The COGITO AI Network uses advanced AI technologies to improve network perforCOLEce and security, as well as to provide access to AI services.',
       },
     ],
   },
   {
     title: 'Where can I get $COLE coins?',
-    desc: 'COLE listed on kucoin and mexc',
+    desc: 'COLE will be listed on Kucion and Mexc.',
     list: [],
   },
 ]
@@ -436,7 +437,7 @@ onUnmounted(() => {
             {{ sloganList[currentIndex] }}
           </div>
         </div>
-        <div class="itemList">
+        <!-- <div class="itemList">
           <div v-for="(item, index) in itemList" :key="index" class="item">
             <div>
               <svg>
@@ -448,7 +449,7 @@ onUnmounted(() => {
               <div class="value">{{ item.value }}</div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="coming">
@@ -457,7 +458,7 @@ onUnmounted(() => {
           class="text-white text-4xl pt-24 pb-16 textShadow animation animate__animated w-fit m-auto break-all font-bold"
           :class="animationFlag.c0 ? 'animate__fadeIn' : 'animate__fadeOut'"
         >
-          COLOTE 3.0 is COMING
+          COGITO 3.0 is COMING
         </div>
         <div class="comingList pb-24">
           <div
@@ -482,8 +483,8 @@ onUnmounted(() => {
             </div>
             <div class="left-content text-2xl">
               AvI is short for Avatar Intelligence. While AI focuses on training
-              machines to have similar capacities as huCOLE beings, AvI aims to
-              realize the scenario imagined by the COLOTE films where huCOLE
+              machines to have similar capacities as human beings, AvI aims to
+              realize the scenario imagined by the COGITO films where human
               brain is uploaded to the Internet, or where a program identical to
               a user's brain is created on the Internet.
             </div>
@@ -522,13 +523,13 @@ onUnmounted(() => {
           <div class="left" style="text-align: right">
             <div class="title text-3xl">
               Distribution of Neural Data<br />
-              on COLOTE Blockchain
+              on COGITO Blockchain
             </div>
             <div class="left-content text-2xl">
-              COLOTE 3.0 will build a general-purpose platform around Avatar
-              Intelligence. Any user can use the tools on COLOTE to upload and
+              COGITO 3.0 will build a general-purpose platform around Avatar
+              Intelligence. Any user can use the tools on COGITO to upload and
               store their brain wave data to create their individual avatars
-              through Avatar Intelligence powered by COLOTE’s distributed
+              through Avatar Intelligence powered by COGITO’s distributed
               computing.
             </div>
           </div>
@@ -575,7 +576,7 @@ onUnmounted(() => {
           data-wow-duration="1s"
           data-wow-delay="1s"
         >
-          THE FOUR PHASES OF COLOTE 3.0
+          THE FOUR PHASES OF COGITO 3.0
         </div>
         <div class="phases-carousel">
           <el-carousel
@@ -611,16 +612,14 @@ onUnmounted(() => {
           class="feature-img animation animate__animated"
           :class="animationFlag.c3 ? 'custom_slideInUp' : 'custom_slideInDown'"
         >
-          <img
-            src="https://www.matrix.io/wp-content/uploads/2022/12/phase1-2.webp"
-          />
+          <img :src="Brain" />
         </div>
       </div>
     </div>
     <div class="ai-network">
       <div class="container">
         <div class="text-4xl text-[#06F] text-center font-bold mb-6">
-          The COLOTE AI Network makes artificial intelligence accessible to
+          The Cogito Ai Network makes artificial intelligence accessible to
           everything!
         </div>
         <div
@@ -649,7 +648,7 @@ onUnmounted(() => {
               </div>
             </div>
             <div class="text-[#C0D1FD] text-xl mt-4">
-              The COLOTE 1.0 blockchain platform is the first AI-optimised
+              The Cogito 1.0 blockchain platform is the first AI-optimised
               blockchain platform. Low transaction speeds, lack of security, the
               complexity of usage, and squandered resources are four key
               concerns in blockchain that we address with AI technology. We
@@ -669,7 +668,7 @@ onUnmounted(() => {
           class="desc2 animation animate__animated"
           :class="animationFlag.c6 ? 'custom_slideInUp' : 'custom_slideInDown'"
         >
-          The COLOTE 2.0 is constructing a blockchain-based AI economy based on
+          The Cogito 2.0 is constructing a blockchain-based AI economy based on
           data, computer power, and AI models. We're building a self-evolving AI
           platform with aggregated processing power, safe data COLEagement,
           transparent data sharing, and access to an ever-growing set of
@@ -790,7 +789,7 @@ onUnmounted(() => {
           </div>
           <div>
             <div class="text-[#06f] text-2xl mb-4 font-bold">
-              Learn More About COLOTE
+              Learn More About COGITO
             </div>
             <div class="learn-more">
               <div
@@ -869,8 +868,11 @@ onUnmounted(() => {
             ><img src="/src/assets/image/telegram.png" class="contact-img"
           /></a>
         </div>
-        <div class="copy-right mt-20 pb-10 text-center text-white">
-          @2022 COLOTE Foundation
+        <div class="copy-right mt-20 pb-2 text-center text-white">
+          @2022 COGITO Foundation
+        </div>
+        <div class="copy-right mt-2 pb-10 text-center text-white">
+          Contact Us Email：<span>sfsfsdf@gmail.com</span>
         </div>
       </div>
     </div>
@@ -912,7 +914,7 @@ onUnmounted(() => {
   align-items: center;
   text-align: center;
   justify-content: flex-end;
-  padding-bottom: 80px;
+  padding-bottom: 140px;
   gap: 80px;
   @media screen and (max-width: 700px) {
     padding-bottom: 50px;
