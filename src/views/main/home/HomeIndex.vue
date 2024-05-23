@@ -479,7 +479,7 @@ onUnmounted(() => {
           <div class="left">
             <div class="title text-3xl">
               Transforming Brain Waves <br />
-              into<span class="text-4xl mx-1">CODE</span> with AI
+              into<span class="text-4xl mx-1">Code</span> with AI
             </div>
             <div class="left-content text-2xl">
               AvI is short for Avatar Intelligence. While AI focuses on training
@@ -523,13 +523,13 @@ onUnmounted(() => {
           <div class="left" style="text-align: right">
             <div class="title text-3xl">
               Distribution of Neural Data<br />
-              on COGITO Blockchain
+              on Cogito Blockchain
             </div>
             <div class="left-content text-2xl">
-              COGITO 3.0 will build a general-purpose platform around Avatar
-              Intelligence. Any user can use the tools on COGITO to upload and
+              Cogito 3.0 will build a general-purpose platform around Avatar
+              Intelligence. Any user can use the tools on Cogito to upload and
               store their brain wave data to create their individual avatars
-              through Avatar Intelligence powered by COGITO’s distributed
+              through Avatar Intelligence powered by Cogito’s distributed
               computing.
             </div>
           </div>
@@ -670,7 +670,7 @@ onUnmounted(() => {
         >
           The Cogito 2.0 is constructing a blockchain-based AI economy based on
           data, computer power, and AI models. We're building a self-evolving AI
-          platform with aggregated processing power, safe data COLEagement,
+          platform with aggregated processing power, safe data management,
           transparent data sharing, and access to an ever-growing set of
           on-chain AI data, models, and applications.
         </div>
@@ -872,7 +872,7 @@ onUnmounted(() => {
           @2022 COGITO Foundation
         </div>
         <div class="copy-right mt-2 pb-10 text-center text-white">
-          Contact Us Email：<span>sfsfsdf@gmail.com</span>
+          Contact Us Email：<span>cogitochain@gmail.com</span>
         </div>
       </div>
     </div>
