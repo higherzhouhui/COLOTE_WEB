@@ -132,7 +132,7 @@ const COLEasList = [
       'Industry 4.0 Platform: AI, Big Data, IoT and blockchain technologies, it will be a powerful tool for implementing Industry 4.0.',
     list: [
       'Data collection and model building',
-      'Minimizing COLEpower and using machine power.',
+      'Minimizing manpower and using machine power.',
       'Serious reductions in production costs.',
       'The emergence of higher efficiency.',
     ],
