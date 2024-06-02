@@ -810,10 +810,7 @@ onUnmounted(() => {
             src="https://www.matrix.io/wp-content/uploads/2023/04/03.png"
             alt=""
           />
-          <img
-            src="https://www.matrix.io/wp-content/uploads/2023/04/logo.png"
-            alt=""
-          />
+
           <img
             src="https://www.matrix.io/wp-content/uploads/2023/04/Basliksiz-2.png"
             alt=""
