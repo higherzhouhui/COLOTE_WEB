@@ -869,7 +869,7 @@ onUnmounted(() => {
           @2022 COGITO Foundation
         </div>
         <div class="copy-right mt-2 pb-10 text-center text-white">
-          Contact Us Email：<span>cogitochain@gmail.com</span>
+          Contact Us Email：<span>cogitochain@outlook.com</span>
         </div>
       </div>
     </div>
